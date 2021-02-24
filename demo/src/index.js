@@ -5,12 +5,12 @@ import App from './App';
 import Welcome from './Welcome';
 import reportWebVitals from './reportWebVitals';
 
+const names = ["Mohit", "Jason", "Randy"]
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Welcome name="Mohit" age ={21}/>
-    <Welcome name="Jason"/>
-    <Welcome name="Randy"/>
+    {names.map(name => <Welcome name={name}/>)}
   </React.StrictMode>,
   document.getElementById('root')
 );
