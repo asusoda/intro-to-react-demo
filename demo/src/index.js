@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Welcome from './Welcome';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Welcome name="Mohit" age ={21}/>
+    <Welcome name="Jason"/>
+    <Welcome name="Randy"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
